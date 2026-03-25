@@ -1,4 +1,4 @@
-# 📚 Dicionário AI
+# 📚 Dicionário AI - MBA Engenharia de Software - FIAP
 
 Um website que consome um BFF para fornecer um dicionário alimentado por IA (OpenAI). O projeto apresenta uma interface para consulta de palavras e definições.
 
@@ -99,11 +99,11 @@ dicionario-AI/
      - **Publish directory:** `dist`
    - Clique em "Create Static Site"
 
-## 👥 Desenvolvedor(es)
+## 👥 Desenvolvedores
 
-- **Igor Lana de Sousa]** – RM 363283
-- **Igor Roberto Barbosa Dos Santos]** – RM 362119
-- **Romulo Oliveira Viganico]** – RM 363711
+- **Igor Lana de Sousa** – RM 363283
+- **Igor Roberto Barbosa Dos Santos** – RM 362119
+- **Romulo Oliveira Viganico** – RM 363711
 
 ## 📝 Licença
 
