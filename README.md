@@ -23,7 +23,7 @@ O **Dicionário AI** foi desenvolvido para demonstrar as melhores práticas no c
 - **Deploy:** Render (Static Site)
 
 ## 📊 Web Vitals
-![Análise Lighthouse](./assets/MetricasWebVitals.png.png)
+![Análise Lighthouse](./src/assets/MetricasWebVitals.png.png)
 
 ## 📋 Pré-requisitos
 
