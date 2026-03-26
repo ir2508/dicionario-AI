@@ -1,10 +1,16 @@
 # 📚 Dicionário AI - MBA Engenharia de Software - FIAP
 
-Um website que consome um BFF para fornecer um dicionário alimentado por IA (OpenAI). O projeto apresenta uma interface para consulta de palavras e definições.
+Um website que consome um BFF para fornecer um dicionário alimentado por IA (OpenAI). O projeto apresenta uma interface interativa para consulta de palavras aleatórias, suas definições e casos de uso práticos.
+
+## 👥 Desenvolvedores
+
+- **Igor Lana de Sousa** – RM 363283
+- **Igor Roberto Barbosa Dos Santos** – RM 362119
+- **Romulo Oliveira Viganico** – RM 363711
 
 ## 🎯 Propósito do Projeto
 
-O **Dicionário AI** foi desenvolvido para demonstrar as melhores práticas consumindo uma API BFF robusta e apresentando dados de forma elegante e acessível. O projeto integra tecnologias atuais para oferecer uma experiência de usuário excepcional.
+O **Dicionário AI** foi desenvolvido para demonstrar as melhores práticas no consumo de uma API BFF robusta e na apresentação de dados de forma elegante e acessível. O projeto integra tecnologias modernas para oferecer uma experiência de usuário excepcional, utilizando React para o frontend e um backend BFF que se conecta à OpenAI para gerar conteúdo dinâmico.
 
 ## 💻 Stack Tecnológico
 
@@ -12,7 +18,12 @@ O **Dicionário AI** foi desenvolvido para demonstrar as melhores práticas cons
 - **Build Tool:** Vite 
 - **Linguagem:** JavaScript 
 - **Gerenciador de Pacotes:** npm
-- **Deployed em:** Render
+- **Biblioteca HTTP:** Axios (versão 1.13.6)
+- **Framework CSS:** Bootstrap (versão 5.0.2)
+- **Deploy:** Render (Static Site)
+
+## 📊 Web Vitals
+![Análise Lighthouse](./assets/MetricasWebVitals.png.png)
 
 ## 📋 Pré-requisitos
 
@@ -75,16 +86,31 @@ Os arquivos compilados serão gerados na pasta `dist/`.
 ```
 dicionario-AI/
 ├── src/
-│   ├── App.jsx            # Componente principal da aplicação
-│   ├── main.jsx           # Ponto de entrada da aplicação
-│   └── index.css          # Estilos globais
-├── public/                # Arquivos estáticos
-├── index.html             # Arquivo HTML principal
-├── vite.config.js         # Configuração do Vite
-├── eslint.config.js       # Configuração do ESLint
-├── package.json           # Dependências e scripts
-└── README.md              # Este arquivo
+│   ├── App.jsx                    # Componente principal da aplicação
+│   ├── main.jsx                   # Ponto de entrada da aplicação
+│   ├── index.css                  # Estilos globais (com suporte a tema escuro)
+│   ├── api/
+│   │   └── axios.js               # Configuração do cliente HTTP Axios
+│   ├── components/
+│   │   └── Card/
+│   │       └── index.jsx          # Componente para exibir cada palavra
+│   └── service/
+│       └── wordsService.jsx       # Serviço para consumir a API de palavras
+├── public/                        # Arquivos estáticos
+├── index.html                     # Arquivo HTML principal (com Bootstrap)
+├── vite.config.js                 # Configuração do Vite
+├── eslint.config.js               # Configuração do ESLint
+├── package.json                   # Dependências e scripts
+└── README.md                      # Este arquivo
 ```
+
+## 🌐 Funcionalidades
+
+- **Busca de Palavras Aleatórias:** Clique no botão "Novas Palavras" para buscar palavras geradas pela IA.
+- **Exibição de Definições:** Cada palavra vem com sua definição e um caso de uso prático.
+- **Interface Responsiva:** Utiliza Bootstrap para uma experiência consistente em dispositivos móveis e desktop.
+- **Tratamento de Erros:** Exibe mensagens de erro em caso de falha na API.
+- **Tema Adaptável:** Suporte a tema claro e escuro via CSS variáveis.
 
 ## 🌐 Deploy
 
@@ -99,12 +125,6 @@ dicionario-AI/
      - **Publish directory:** `dist`
    - Clique em "Create Static Site"
 
-## 👥 Desenvolvedores
-
-- **Igor Lana de Sousa** – RM 363283
-- **Igor Roberto Barbosa Dos Santos** – RM 362119
-- **Romulo Oliveira Viganico** – RM 363711
-
 ## 📝 Licença
 
 Este projeto está disponibilizado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
@@ -113,5 +133,7 @@ Este projeto está disponibilizado sob a licença MIT. Veja o arquivo [LICENSE](
 
 - [Documentação React](https://react.dev)
 - [Documentação Vite](https://vitejs.dev)
+- [Documentação Axios](https://axios-http.com)
+- [Documentação Bootstrap](https://getbootstrap.com)
 
 **Última atualização:** Março de 2026
